@@ -21,8 +21,6 @@ header{
 }
 
 .logo{
-    background-color: aqua;
-    border: 10px solid black;
     line-height: 0;
     display: flex;
     justify-content:center;
@@ -43,8 +41,6 @@ header{
 }
 
 .navbar{
-    background-color: brown;
-    border: 10px solid black;
     display: flex;
     justify-content: space-around;
     margin: 0 30%;
@@ -141,8 +137,6 @@ ul li{
 }
 
 footer{
-    background-color: red;
-    border: 10px solid black;
 margin-bottom: 15px;
     margin-top: 40px;
     display: flex;
@@ -158,7 +152,7 @@ margin-bottom: 15px;
 
 .section{
     padding: 60px;
-    margin: 0;
+    margin: auto;
 }
 
 .paula{
@@ -195,22 +189,68 @@ margin-bottom: 15px;
 
 /* Pagina WORKSHOP */
 
-.section{
-    padding: 60px;
-    margin: 0;
+main {
+    padding: 20px auto;
+    margin: auto;
 }
 
 .work{
+    margin-top: -60px;
     font-weight: bold;
     font-size: 3rem;
     display: flex;
     justify-content: center;
 }
 .work__contenido{
+    margin-top: -150px;
     display: flex;
     justify-content: center;
 }
 
 .work__contenido p{
     margin-top: 90px;
+}
+
+.section{
+    margin-top: -150px;
+display: flex;
+align-items: center;
+}
+
+.slider-frame {
+	width: 1500px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
